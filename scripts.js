@@ -13,5 +13,4 @@ $(document).ready(function () {
         $("#startGamePage").fadeIn("slow").css("display", "block");
     });
 
-    
 });
