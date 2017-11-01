@@ -1,6 +1,6 @@
 body {
     justify-content: center;
-    background-color: rgb(153, 153, 221);
+    background-color: rgb(0, 102, 255);
 }
 
 #startGamePage {
@@ -9,14 +9,17 @@ body {
 }
 
 #welcome {
+  color: rgb(255,255,255);
+  font-family: 'Bangers', cursive;
+  font-size: 70px;
 
 }
 
 #startButton {
-    margin-top: 20%;
+    margin-top: 5% ;
     padding: 100px;
     border-radius: 100%;
     border: none;
-    background-color: purple;
+    background-color: rgb(204, 0, 0);
 
 }
