@@ -13,4 +13,12 @@ $(document).ready(function () {
         $("#startGamePage").fadeIn("slow").css("display", "block");
     });
 
+
+    // $(function () {
+    //     $(".flip").flip({
+    //         trigger: 'click'
+    //     });
+    // });
+
+
 });
