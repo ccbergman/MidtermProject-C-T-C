@@ -1,0 +1,22 @@
+body {
+    justify-content: center;
+    background-color: rgb(153, 153, 221);
+}
+
+#startGamePage {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#welcome {
+
+}
+
+#startButton {
+    margin-top: 20%;
+    padding: 100px;
+    border-radius: 100%;
+    border: none;
+    background-color: purple;
+
+}
