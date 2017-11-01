@@ -13,16 +13,15 @@ $(document).ready(function () {
         $("#startGamePage").fadeIn("slow").css("display", "block");
     });
 
+    // $(function () {
+    //     $("#card1").flip({
+    //         trigger: 'click'
+    //     });
+    //     $(".back").css("display", "none");
+    //     $(".front").css("display", "block");
+    // });
 
-    $(function () {
-        $("#card1").flip({
-            trigger: 'click'
-
-        });
-        $(".back").css("display", "block");
-        $(".front").css("display", "none");
-    });
-    $('#resetButton').click(function() {
+    $('#resetButton').click(function () {
         location.reload();
     });
 });

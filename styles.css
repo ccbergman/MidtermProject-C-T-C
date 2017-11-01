@@ -10,14 +10,13 @@ body {
 
 #gamePage {
     display: none;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 #welcome {
   color: rgb(255,255,255);
   font-family: 'Bangers', cursive;
   font-size: 70px;
-
 }
 
 #startButton {
@@ -70,20 +69,23 @@ body {
     text-align: center;
 }
 
+#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
 
- #card1 {
-    height: 199px;
-    width: 300px;
+/* #card1, #card2, #card3 {
+    height: 100px;
+    width: 100px;
     margin: 0 auto;
+    background-color: purple;
 }
-#card1  img {
-    width: 300px;
-    height: auto;
-}
-#card1  .back {
-    background: #2184cd;
-    color: #fff;
+
+#card1, #card2, #card3 .back {
+    height: 100px;
+    width: 100px;
     text-align: center;
     background-color: green;
     display: none;
-}
+} */
