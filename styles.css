@@ -70,9 +70,14 @@ body {
 }
 
 #card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9 {
-    height: 100px;
-    width: 100px;
-    background-color: black;
+    /* when added photo, change height and width to percentages */
+    height: 90px;
+    width: 90px;
+    border-radius: 10%;
+    background-color: blue;
+    /* background-image: url("c:\Users\Chelsea\LabsGC\Midterm Project\images\kapow.png"); */
+    margin: 2%;
+    justify-content: space-between;
 }
 
 /* #card1, #card2, #card3 {
