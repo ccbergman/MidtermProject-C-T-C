@@ -8,6 +8,10 @@ body {
     padding-top: 10px;
 }
 
+#gamePage {
+  margin-top: 15%
+}
+
 #welcome {
   color: rgb(255,255,255);
   font-family: 'Bangers', cursive;
@@ -22,4 +26,18 @@ body {
     border: none;
     background-color: rgb(204, 0, 0);
 
+}
+
+#cardContainer {
+    background-color: white;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+#cardRow1, #cardRow2, #cardRow3, #cardRow4 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 10px 10px 10px;
 }
