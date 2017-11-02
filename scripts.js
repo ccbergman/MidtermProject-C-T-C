@@ -58,17 +58,17 @@ $(document).ready(function () {
 
                 // test = $(this).style("background-image");
                 if (click1.css("background-image") === click2.css("background-image")) {
-                  $(click1).fadeTo(3000, 0);
-                  $(click2).fadeTo(3000, 0);
+                    $(click1).fadeTo(3000, 0);
+                    $(click2).fadeTo(3000, 0);
+                    click1 = "";
+                    click2 = "";
 
-                  // $(click1).val('');
-                  // $(click2).val('');
                 } else {
-                //   setTimeout(function() {
-                //   flipCard(".flip");
-                //   // flipCard(click2);
-                //
-                // }, 3000);
+                    //   setTimeout(function() {
+                    //   flipCard(".flip");
+                    //   // flipCard(click2);
+                    //
+                    // }, 3000);
 
 
 
