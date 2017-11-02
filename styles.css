@@ -98,10 +98,16 @@ img {
     background-image: url("images/kapow.sm.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat; 
-    /* display: none; */
+    display: none;
 }
 
 .cardBack {
-    padding: 20%;
-    display: none;
+    height: 100%;
+    width: 100%;
+    margin-top: -32%;
+    position: absolute;
+    /* background-image: url("images/kapow.sm.jpg"); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    /* display: none; */
 }
