@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     var cardClicked;
     var graphicsArray = ["images/aquaman.sm.jpg", "images/captainamerica.sm.jpg", "images/deadpool.sm.jpg",
+        "images/flash.sm.jpg", "images/ironman.sm.jpg", "images/spooooderman.sm.jpg", "images/aquaman.sm.jpg", "images/captainamerica.sm.jpg", "images/deadpool.sm.jpg",
         "images/flash.sm.jpg", "images/ironman.sm.jpg", "images/spooooderman.sm.jpg"];
 
 
@@ -13,8 +14,6 @@ $(document).ready(function () {
     $('#resetButton').click(function () {
         location.reload();
     });
-
-
 
     // $(function () {
     //     $(".card").flip({
