@@ -1,8 +1,9 @@
 $(document).ready(function () {
 
     var cardClicked;
-    var memoryCards = [];
-    var countr = 0;
+    var secondCardClicked;
+    var counter = 0;
+
 
     var array = ["images/aquaman.sm.jpg", "images/captainamerica.sm.jpg", "images/deadpool.sm.jpg",
         "images/flash.sm.jpg", "images/ironman.sm.jpg", "images/spooooderman.sm.jpg", "images/aquaman.sm.jpg", "images/captainamerica.sm.jpg", "images/deadpool.sm.jpg",
@@ -16,6 +17,7 @@ $(document).ready(function () {
     $('#resetButton').click(function () {
         location.reload();
     });
+//restarts the page, and reshuffles the cards once game begins again
 
     function shuffle(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
@@ -41,6 +43,16 @@ $(document).ready(function () {
         $(".flip").flip({
             trigger: 'click'
         });
+
+      //   $(".flip").on("click", function () {
+      //   if ($(this).style(backgroundImage === "url('')") {
+      //     cardClicked = $(this);
+      //   }
+      // }
+      // ));
+
     });
+
+
 
 });
