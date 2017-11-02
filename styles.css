@@ -81,14 +81,11 @@ body {
 
 .flip {
 	margin: 0.4%;
-    padding: 10%;
+    padding: 10.3%;
     display: flex;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-
-/* img {
-    width: 100%;
-    height: 100%;
-} */
 
 .flip .front {
     height: 100%;
