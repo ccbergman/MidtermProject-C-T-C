@@ -14,7 +14,7 @@ $(document).ready(function () {
         $("#gamePage").fadeIn("slow");
     });
 
-// restarts the page, and reshuffles the cards once game begins again
+    // restarts the page, and reshuffles the cards once game begins again
     $('#resetButton').click(function () {
         location.reload();
     });
@@ -39,22 +39,40 @@ $(document).ready(function () {
 
     });
 
-//flips the clicked card, and displays the random background image
+    //flips the clicked card, and displays the random background image
     $(function () {
         $(".flip").flip({
             trigger: 'click'
         });
 
-//We're working on the matching functionality
-      //   $(".flip").on("click", function () {
-      //   if ($(this).style(backgroundImage === "url('')") {
-      //     cardClicked = $(this);
-      //   }
-      // }
-      // ));
+        var click1 = '';
+        var click2 = '';
+        //We're working on the matching functionality
+        $(".flip").on("click", function () {
 
+            if (click1 === '') {
+                click1 = $(this).css("background-image");
+                console.log(click1);
+
+            } else if (click2 === '') {
+                click2 = $(this).css("background-image");
+                console.log(click2);
+
+                // test = $(this).style("background-image");
+                if (click1 === click2) {
+                    //They match
+
+                } else {
+                    //They don't match
+                    //if they don't match flip them back over
+                    // reset click1 & click2
+                }
+            }
+        });
     });
 
 
-
 });
+
+
+
