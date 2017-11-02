@@ -1,17 +1,16 @@
 $(document).ready(function () {
-    console.log("Hi");
 
     var cardClicked;
+    var graphics = [];
+
 
     $("#startButton").on("click", function () {
         $("#startGamePage").css("display", "none");
-        $("#gamePage").fadeIn("slow").css("display", "block");
-
+        $("#gamePage").fadeIn("slow");
     });
 
-    $("#resetButton").on("click", function () {
-        $("#gamePage").css("display", "none");;
-        $("#startGamePage").fadeIn("slow").css("display", "block");
+    $('#resetButton').click(function () {
+        location.reload();
     });
 
     // $(function () {
@@ -22,7 +21,6 @@ $(document).ready(function () {
     //     $(".back").css("display", "none");
     // });
 
-    $('#resetButton').click(function () {
-        location.reload();
-    });
+
+
 });
