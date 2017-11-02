@@ -14,7 +14,7 @@ $(document).ready(function () {
         $("#gamePage").fadeIn("slow");
     });
 
-//restarts the page, and reshuffles the cards once game begins again
+// restarts the page, and reshuffles the cards once game begins again
     $('#resetButton').click(function () {
         location.reload();
     });
