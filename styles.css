@@ -79,18 +79,18 @@ body {
     border-radius: 4%;
 }
 
-.card {
+.flip {
 	margin: 0.4%;
     padding: 10%;
     display: flex;
 }
 
-img {
+/* img {
     width: 100%;
     height: 100%;
-}
+} */
 
-.cardFront {
+.flip .front {
     height: 100%;
     width: 100%;
     margin-top: -32%;

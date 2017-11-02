@@ -1,6 +1,9 @@
 $(document).ready(function () {
 
     var cardClicked;
+    var memoryCards = [];
+    var countr = 0;
+
     var array = ["images/aquaman.sm.jpg", "images/captainamerica.sm.jpg", "images/deadpool.sm.jpg",
         "images/flash.sm.jpg", "images/ironman.sm.jpg", "images/spooooderman.sm.jpg", "images/aquaman.sm.jpg", "images/captainamerica.sm.jpg", "images/deadpool.sm.jpg",
         "images/flash.sm.jpg", "images/ironman.sm.jpg", "images/spooooderman.sm.jpg"];
@@ -34,14 +37,10 @@ $(document).ready(function () {
 
     });
 
-
-    // $(function () {
-    //     $(".card").flip({
-    //         trigger: 'click'
-    //     });
-    //     // $(".cardFront").css("display", "block");
-    //     $(this).addClass("cardBack").removeClass("cardFront");
-    //     cardClicked = $(this);
-    // });
+    $(function () {
+        $(".flip").flip({
+            trigger: 'click'
+        });
+    });
 
 });
