@@ -14,10 +14,10 @@ $(document).ready(function () {
         $("#gamePage").fadeIn("slow");
     });
 
+//restarts the page, and reshuffles the cards once game begins again
     $('#resetButton').click(function () {
         location.reload();
     });
-//restarts the page, and reshuffles the cards once game begins again
 
     function shuffle(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
@@ -39,11 +39,13 @@ $(document).ready(function () {
 
     });
 
+//flips the clicked card, and displays the random background image
     $(function () {
         $(".flip").flip({
             trigger: 'click'
         });
 
+//We're working on the matching functionality
       //   $(".flip").on("click", function () {
       //   if ($(this).style(backgroundImage === "url('')") {
       //     cardClicked = $(this);
