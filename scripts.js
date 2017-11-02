@@ -51,17 +51,19 @@ $(document).ready(function () {
         $(".flip").on("click", function () {
 
             if (click1 === '') {
-                click1 = $(this).css("background-image");
+                click1 = $(this);
                 console.log(click1);
 
             } else if (click2 === '') {
-                click2 = $(this).css("background-image");
+                click2 = $(this);
                 console.log(click2);
 
                 // test = $(this).style("background-image");
-                if (click1 === click2) {
-                    //They match
-
+                if (click1.css("background-image") === click2.css("background-image")) {
+                  $(click1).fadeTo(3000, 0);
+                  $(click2).fadeTo(3000, 0);
+                  // $(click1).val('');
+                  // $(click2).val('');
                 } else {
                     //They don't match
                     //if they don't match flip them back over
@@ -72,6 +74,3 @@ $(document).ready(function () {
     });
 
 });
-
-
-
