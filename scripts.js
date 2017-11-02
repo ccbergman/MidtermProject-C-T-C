@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    var cardClicked;
-    var secondCardClicked;
     var counter = 0;
 
 
@@ -40,7 +38,7 @@ $(document).ready(function () {
     });
 
     //flips the clicked card, and displays the random background image
-    $(function () {
+    $(function flipCard() {
         $(".flip").flip({
             trigger: 'click'
         });
@@ -62,9 +60,18 @@ $(document).ready(function () {
                 if (click1.css("background-image") === click2.css("background-image")) {
                   $(click1).fadeTo(3000, 0);
                   $(click2).fadeTo(3000, 0);
+
                   // $(click1).val('');
                   // $(click2).val('');
                 } else {
+                //   setTimeout(function() {
+                //   flipCard(".flip");
+                //   // flipCard(click2);
+                //
+                // }, 3000);
+
+
+
                     //They don't match
                     //if they don't match flip them back over
                     // reset click1 & click2
