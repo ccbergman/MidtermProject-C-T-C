@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
     var cardClicked;
-    var graphics = [];
+    var graphicsArray = ["images/aquaman.sm.jpg", "images/captainamerica.sm.jpg", "images/deadpool.sm.jpg",
+        "images/flash.sm.jpg", "images/ironman.sm.jpg", "images/spooooderman.sm.jpg"];
 
 
     $("#startButton").on("click", function () {
@@ -13,14 +14,15 @@ $(document).ready(function () {
         location.reload();
     });
 
+
+
     // $(function () {
-    //     $("card1").flip({
+    //     $(".card").flip({
     //         trigger: 'click'
     //     });
-    //     $(".front").css("display", "block");
-    //     $(".back").css("display", "none");
+    //     $(".cardFront").css("display", "block");
+    //     $(".cardBack").css("display", "none");
     // });
-
 
 
 });
