@@ -28,6 +28,10 @@ $(document).ready(function () {
     array = shuffle(array);
     console.log(array);
 
+    $("div.cardBack").each(function (i) {
+         $(this).css("background-image", "url(" + array[i] + ")");
+
+     });
 
 
 
