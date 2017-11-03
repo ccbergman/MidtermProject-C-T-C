@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var counter = 0;
 
-    //array of all photos to be shuffled
+    //array of all photos to be shuffled(using each photo twice)
     var array = ["images/aquaman.sm.jpg", "images/captainamerica.sm.jpg", "images/deadpool.sm.jpg",
         "images/flash.sm.jpg", "images/ironman.sm.jpg", "images/spooooderman.sm.jpg", "images/aquaman.sm.jpg", "images/captainamerica.sm.jpg", "images/deadpool.sm.jpg",
         "images/flash.sm.jpg", "images/ironman.sm.jpg", "images/spooooderman.sm.jpg"];
@@ -17,7 +17,7 @@ $(document).ready(function () {
         location.reload();
     });
 
-    //funtion to randomize the cards
+    //function to randomize the cards
     function shuffle(array) {
         var currentIndex = array.length, temporaryValue, randomIndex;
         while (0 !== currentIndex) {
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     });
 
-    //flips the clicked card, and displays the random background image
+    //flips the clicked card, and displays the random background image pulled from array
     $(function flipCard() {
         $(".flip").flip({
             trigger: 'click'
@@ -64,7 +64,7 @@ $(document).ready(function () {
                     click1 = "";
                     click2 = "";
                 }
-                //cards flip back
+                //cards return back to its original state
                 else {
                     setTimeout(function () {
                         $(click1).flip(false);
