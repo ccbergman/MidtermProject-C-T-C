@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     });
 
-    //flips the clicked card, and displays the random background image pulled from array
+    //flips the clicked card and displays the random background image pulled from array
     $(function flipCard() {
         $(".flip").flip({
             trigger: 'click'
@@ -56,7 +56,7 @@ $(document).ready(function () {
             } else if (click2 === '') {
                 click2 = $(this);
 
-                //getting ids after determining what's in each click, stops problem of the a double click counting as a match
+                //gets ids after determining what's in each click, stops problem of the a double click counting as a match
                 if (click1.css("background-image") === click2.css("background-image") &&
                     ($(click1).get(0).children[0].id !== $(click2).get(0).children[0].id)) {
                     $(click1).fadeTo(3000, 0);
@@ -64,7 +64,7 @@ $(document).ready(function () {
                     click1 = "";
                     click2 = "";
                 }
-                //cards return back to its original state
+                //cards return back to their original state (flip-back)
                 else {
                     setTimeout(function () {
                         $(click1).flip(false);
